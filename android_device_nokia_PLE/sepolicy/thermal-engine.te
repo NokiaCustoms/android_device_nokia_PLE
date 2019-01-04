@@ -1,0 +1,12 @@
+allow thermal-engine sysfs_batteryinfo:file r_file_perms;
+allow thermal-engine sysfs_kgsl:file r_file_perms;
+
+allow thermal-engine file_contexts_file:file { getattr open read };
+
+allow thermal-engine proc:file { getattr open read };
+
+allow thermal-engine self:process setfscreate;
+
+allow thermal-engine socket_device:sock_file { create relabelfrom setattr };
+
+allow thermal-engine thermal_socket:sock_file relabelto;

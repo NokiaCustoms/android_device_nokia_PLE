@@ -1,0 +1,12 @@
+allow init debugfs:file write;
+
+# allow init default_android_hwservice:hwservice_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
+
+allow init hwservicemanager:binder { call transfer };
+
+# allow init firmware_file:dir { create setattr };
+allow init unlabeled:dir mounton;
+
+# allow init shell_exec:file execute_no_trans;
+# allow init vendor_file:file execute_no_trans;

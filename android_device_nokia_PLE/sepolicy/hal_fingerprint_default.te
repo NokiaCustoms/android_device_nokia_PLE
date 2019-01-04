@@ -1,0 +1,6 @@
+allow hal_fingerprint_default fpc_sysfs:file rw_file_perms;
+allow hal_fingerprint_default fpc_sysfs:dir rw_dir_perms;
+
+allow hal_fingerprint_default gx_fpd_service:service_manager find;
+
+allow hal_fingerprint_default sysfs_vadc_dev:dir search;
