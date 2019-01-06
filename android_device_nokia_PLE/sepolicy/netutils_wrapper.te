@@ -1,0 +1,2 @@
+allow netutils_wrapper kernel:system module_request;
+allow netutils_wrapper self:capability sys_module;

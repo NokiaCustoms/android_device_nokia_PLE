@@ -1696,24 +1696,17 @@ vendor/etc/camera/ov2281_chromatix.xml
 # Display calibration - from stock - MIUI Beta 8.4.12
 
 # Fingerprint - from stock - MIUI Beta 8.4.12
-bin/ple_fp_test
-vendor/bin/gx_fpcmd
 vendor/bin/gx_fpd
-# lib/hw/fingerprint.msm8937.so
-lib64/hw/fingerprint.elan.so
+lib/hw/fingerprint.msm8937.so
 lib64/hw/fingerprint.msm8937.so
 lib64/lib_fpc_tac_shared.so
-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 vendor/lib64/hw/gxfingerprint.default.so
-vendor/lib64/hw/fingerprint.goodix.so
 vendor/lib64/libalgoandroid.so
 vendor/lib64/libfp_client.so
 vendor/lib64/libfpjni.so
 vendor/lib64/libfpservice.so
--vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
--vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-# vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-# vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 
 # Graphics firmware - from stock - MIUI Beta 8.4.12
 etc/firmware/cppf.b00
@@ -1843,5 +1836,8 @@ vendor/firmware/a225_pfp.fw
 vendor/firmware/cpp_firmware_v1_4_0.fw
 vendor/firmware/a300_pm4.fw
 
-# Touchscreen - from stock - MIUI Beta 8.4.12
+# Sensors
+vendor/etc/sensors/sensor_def_qcomdev.conf
+vendor/lib64/hw/lights.msm8937.so
+vendor/lib/hw/lights.msm8937.so
 

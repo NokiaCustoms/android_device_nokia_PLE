@@ -177,9 +177,6 @@ telephony.lteOnCdmaDevice=1
 persist.fuse_sdcard=true
 ro.sys.sdcardfs=true
 
-# USB
-ro.usb.vid=05C6
-
 # Time services
 persist.timed.enable=true
 

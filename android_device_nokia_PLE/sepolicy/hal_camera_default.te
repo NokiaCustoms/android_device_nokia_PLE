@@ -1,0 +1,5 @@
+allow hal_camera_default shell_exec:file { execute getattr };
+allow hal_camera_default toolbox_exec:file getattr;
+
+allow hal_camera_default shell_exec:file { execute_no_trans open read };
+allow hal_camera_default toolbox_exec:file { execute execute_no_trans open read };

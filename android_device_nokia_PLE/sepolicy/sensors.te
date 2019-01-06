@@ -1,0 +1,2 @@
+allow sensors block_device:blk_file { getattr open read write };
+allow sensors self:capability net_raw;

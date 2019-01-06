@@ -177,10 +177,13 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
+# Fingerprintd
+# PRODUCT_PACKAGES += \
+#     fingerprintd
+
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.biometrics.fingerprint@2.1-service
+     android.hardware.biometrics.fingerprint@2.1
 
 # FM
 PRODUCT_PACKAGES += \
@@ -381,8 +384,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
-    $(DEVICE_PATH)/configs/sensors/sensor_def_qcomdev.conf:system/vendor/etc/sensors/sensor_def_qcomdev.conf
+    $(DEVICE_PATH)/configs/sensors/hals.conf:system/vendor/etc/sensors/hals.conf
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \

@@ -1,1 +1,13 @@
 allow untrusted_app sysfs_zram:dir search;
+
+allow untrusted_app freq_prop:file read;
+allow untrusted_app opengles_prop:file read;
+# allow untrusted_app runtime_event_log_tags_file:file { open read };
+allow untrusted_app scr_enabled_prop:file read;
+allow untrusted_app sdm_idle_time_prop:file read;
+allow untrusted_app spcomlib_prop:file read;
+allow untrusted_app usf_prop:file read;
+allow untrusted_app wcnss_prop:file read;
+allow untrusted_app wififtmd_prop:file read;
+
+allow untrusted_app sysfs_zram:file { open read };

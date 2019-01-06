@@ -1,0 +1,1 @@
+allow radio wcnss_prop:file read;

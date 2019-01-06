@@ -1,0 +1,2 @@
+allow netmgrd kernel:system module_request;
+allow netmgrd netutils_wrapper:process noatsecure;
